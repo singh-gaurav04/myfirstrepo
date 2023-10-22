@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s linear;
+ }
+ #wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    width: 1200px;
+   margin: 0 auto;
+}
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+.logo{
+    width: 80px;
+  
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+      justify-content: center;
+}
+.logo-text{
+   
+      font-size: 28px;
+      font-style: bold;
+}
+.nav-items{
+    display: flex;
+    gap: 2rem;
+   padding: 0 4em;
+}
+.nav-items div{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-items div a{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.nav-items div:hover{
+    transition: 0.8s;
+    font-weight: bold;  
+}
+
+h1{
+ 
+   margin: 20px 0;
+   text-align: center;
+   font-size: 3rem;
+  /* border: 1px solid black; */
+   }
+
+   .cart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 4rem auto;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(250, 249, 249);
+    width: 75%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 10px 8px #888888;
+    /* border: 1px solid black; */
+}
+.card-right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.card-left-side{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.productname{
+    font-size: 50px;
+    font-weight: 500;
+}
+.productdescription{
+    font-weight: 500;
+}
+.productprice{
+    font-size: 30px;
+    font: bold;
+    font-weight: bolder;
+    color: green;
+}
+.fakeprice{
+    font-size: 20px;
+}
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
+}
+.button{
+   width: 120px;
+   height: 40px;
+   letter-spacing: 2px;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+button:hover{
+    background-color: green;
+    color: white;
+    box-shadow: 5px 10px 8px #888888; 
+    transform: 3s;
+    transform: scale(1.1);
+}
+/* jo chah rhe the wo nahi hua */
+/* img:hover{
+    position: absolute;
+    transform: scale(1.5);
+    cursor: crosshair;
+} */
+@media only screen and (min-width: 600px) {
+    #wrapper{display: flex; flex-wrap: wrap;}
+}
+
+@media only screen and (max-width: 600px) {
+    #wrapper{display: flex; flex-wrap: wrap ;}
+    .container{display: flex; flex-wrap: wrap;}
+   
+}
